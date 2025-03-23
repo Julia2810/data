@@ -1,0 +1,6 @@
+2025-03-22 21:10:08.905019+03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT*FROM Person\000d\000aINSERT [*]INTO Person (103, ghghh , date) VALUES (100, 'bla-bla', '08.01.2016 10:47')\000d\000aON DUPLICATE KEY UPDATE date = '08.01.2016 10:47'"
+Syntax error in SQL statement "SELECT*FROM Person\000d\000aINSERT [*]INTO Person (103, ghghh , date) VALUES (100, 'bla-bla', '08.01.2016 10:47')\000d\000aON DUPLICATE KEY UPDATE date = '08.01.2016 10:47'"; SQL statement:
+SELECT*FROM Person
+INSERT INTO Person (103, ghghh , date) VALUES (100, 'bla-bla', '08.01.2016 10:47')
+ON DUPLICATE KEY UPDATE date = '08.01.2016 10:47' [42000-232]
